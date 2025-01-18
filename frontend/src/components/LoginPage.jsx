@@ -35,7 +35,7 @@ const LoginPage = () => {
           <div className="form-group">
             <label htmlFor="password">Password</label>
             <input
-              id="password"
+              id="username"
               type="password"
               placeholder="Enter your password"
               value={password}
