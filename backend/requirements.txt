@@ -1,8 +1,15 @@
 # File: backend/requirements.txt
-flask
+Flask
 python-dotenv
-supabase-py
-flask-cors
-gunicorn
 supabase
+Werkzeug
+requests
+python-magic
+httpx
+postgrest
+realtime
+storage3
+gotrue
+gunicorn
+supabase-py
 
