@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '../services/Supabase.jsx';
-import '../styles/Dashboard.css';
+import '../styles/DashBoard.css';
 
 const Dashboard = () => {
   const [name, setName] = useState('');
