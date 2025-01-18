@@ -26,7 +26,7 @@ const LoginPage = () => {
             <input
               id="username"
               type="text"
-              placeholder="Enter your username"
+              placeholder="Enter your username."
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               required
