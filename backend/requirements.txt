@@ -1,6 +1,7 @@
 # File: backend/requirements.txt
 flask
 python-dotenv
-supabase
+supabase-py
 flask-cors
 gunicorm
+
