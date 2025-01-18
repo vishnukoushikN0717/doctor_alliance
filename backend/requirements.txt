@@ -1,15 +1,6 @@
-# File: backend/requirements.txt
 Flask
-python-dotenv
-supabase
+Flask-Cors
 Werkzeug
-requests
-python-magic
-httpx
-postgrest
-realtime
-storage3
-gotrue
+PyJWT
+supabase
 gunicorn
-supabase-py
-
