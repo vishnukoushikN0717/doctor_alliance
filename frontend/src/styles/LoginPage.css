@@ -90,7 +90,34 @@
 .form-group input::placeholder {
     color: #a0aec0;
 }
+#username {
+    color: black;
+    /* Sets the text color to black */
+    font-weight: bold;
+    /* Optional: Makes the text bold for better visibility */
+    border: 1px solid #ccc;
+    /* Optional: Adds a subtle border for better styling */
+    padding: 0.5rem;
+    /* Optional: Adds padding for better usability */
+    border-radius: 4px;
+    /* Optional: Rounds the corners for a cleaner look */
+    background-color: white;
+    /* Optional: Ensures the background contrasts with the text */
+}
 
+/* Optional: Add hover and focus styles for better user experience */
+#username:hover {
+    border-color: #888;
+    /* Change border color on hover */
+}
+
+#username:focus {
+    outline: none;
+    border-color: #007BFF;
+    /* Highlight the border when the input is focused */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Add a subtle glow on focus */
+}
 .login-button {
     background: linear-gradient(to right, #667eea, #764ba2);
     color: white;
