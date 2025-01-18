@@ -1,0 +1,4 @@
+# File: backend/requirements.txt
+flask
+python-dotenv
+supabase
