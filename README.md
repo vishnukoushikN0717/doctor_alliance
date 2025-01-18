@@ -1,32 +1,34 @@
-# Doctor_Alliance_Assignment
+# Doctor Alliance
 
-A full-stack web application that lets users securely upload, manage, and organize their pictures. Built with React for the frontend, Flask for the backend, and Supabase for storage and database.
+A full-stack web application that allows users to securely upload, manage, and organize their pictures. The project leverages React for the frontend, Flask for the backend, and Supabase for storage and database management.
 
 ## Features
 
-Dummy User authentication
-Secure Pitures upload (Image only)
-Responsive design
-Database integration with Supabase
+- **User Authentication:** Dummy authentication system.
+- **Secure Uploads:** Allows image-only uploads.
+- **Responsive Design:** Ensures seamless usability across devices.
+- **Database Integration:** Utilizes Supabase for data storage and management.
 
 ## Tech Stack
 
 ### Frontend
-React + Vite
-CSS for styling
-Axios for API calls
+- React with Vite
+- CSS for styling
+- Axios for API calls
 
 ### Backend
-Python Flask
-JWT for authentication
-Flask-CORS for handling cross-origin requests
+- Python Flask
+- JWT for authentication
+- Flask-CORS for handling cross-origin requests
 
 ### Database
-Supabase (PostgreSQL)
-Row Level Security (RLS)
-Automated timestamp management
+- Supabase (PostgreSQL)
+- Row Level Security (RLS)
+- Automated timestamp management
 
 ## Project Structure
+
+```
 doctor-alliance/
 ├── backend/
 │   ├── venv/
@@ -41,52 +43,66 @@ doctor-alliance/
 │   │   ├── Services/
 │   │   │   └── Supabase.jsx
 │   │   ├── styles/
-│   │   │   └── global.css
-|   |   |   └── LoginPage.css
-|   |   |   └── AdminPanel.css
-|   |   |   └── DashBoard.css
-|   |   |   └── App.css
+│   │   │   ├── global.css
+│   │   │   ├── LoginPage.css
+│   │   │   ├── AdminPanel.css
+│   │   │   ├── DashBoard.css
+│   │   │   └── App.css
 │   │   └── App.jsx
 │   └── package.json
-└── README.md-This is the structure of the main files; the remaining ones are the default React + Vite files that are not listed here.eg:public directory
+└── README.md
+```
 
 ## Getting Started
 
 ### Prerequisites
-Node.js (v14 or higher)
-Python (v3.8 or higher)
-Git
+
+- Node.js (v14 or higher)
+- Python (v3.8 or higher)
+- Git
 
 ### Installation
 
-1. Clone the repositorybash
-git clone [ https://github.com/your-username/doctor-alliance.git](https://github.com/vishnukoushikN0717/doctor_alliance.git)
-cd doctor-alliance
-2. Backend Setupbash
-cd backend
-# If using existing venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/vishnukoushikN0717/doctor_alliance.git
+   cd doctor-alliance
+   ```
 
-# If setting up fresh
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
+2. **Backend Setup**
+   ```bash
+   cd backend
+   
+   # If using an existing virtual environment
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   
+   # If setting up a new virtual environment
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   pip install -r requirements.txt
 
-# Start the backend server
-python app.py
-3. Frontend Setupbash
-cd frontend
-npm install
-npm run dev
-4. Access the application at http://localhost:5000
+   # Start the backend server
+   python app.py
+   ```
+
+3. **Frontend Setup**
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
+
+4. **Access the Application**
+   - The application will be available at: [http://localhost:5000](http://localhost:5000)
 
 ### Default Credentials
-Username: admin
-Password: admin
+- **Username:** admin  
+- **Password:** admin
 
 ## Database Schema
 
-### Users Tablesql
+### Users Table
+```sql
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     name TEXT NOT NULL,
@@ -94,32 +110,30 @@ CREATE TABLE users (
     contact_date DATE NOT NULL,
     profile_picture_url TEXT NOT NULL
 );
+```
 
 ## Security Features
 
-JWT-based authentication
-PDF-only file upload restriction
-Row Level Security (RLS) in Supabase
-Client-side and server-side validation
-Secure file storage
-
-
-## I have included my Supabase credentials directly in the respective folders where they are needed, instead of using a .env file, to provide easier access when running the code.
+- JWT-based authentication
+- Image-only file upload restriction
+- Row Level Security (RLS) in Supabase
+- Client-side and server-side validation
+- Secure file storage
 
 ## API Endpoints
 
-POST /login - User authentication
-POST /upload - Piture upload
-GET /uploads - Fetch uploaded Pictures
-
+- **POST /login:** User authentication
+- **POST /upload:** Upload an image
+- **GET /uploads:** Fetch uploaded images
 
 ## Acknowledgments
 
-Supabase for database hosting
-Flask documentation
-React documentation
-Vite build tool
+- **Supabase:** Database hosting
+- **Flask Documentation**: Official Flask documentation
+- **React Documentation:** Official React documentation
+- **Vite:** Build tool
 
 ## Deployed Links
 
-Live Server Link:"https://doctor-alliance-byh9.vercel.app/"
+- **Live Server:** [Doctor Alliance](https://doctor-alliance-byh9.vercel.app/)
+
