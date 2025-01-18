@@ -3,5 +3,5 @@ flask
 python-dotenv
 supabase-py
 flask-cors
-gunicorm
+gunicorn
 
